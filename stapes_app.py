@@ -12,9 +12,9 @@ st.write("a machine learning app for predicting postoperative airbone gap using 
 # Input features
 st.sidebar.header("Enter your features")
 
-feature1 = st.sidebar.number_input('Surgeon Experience (years)', min_value=0, max_value=50, value=0, step=1)
-feature2 = st.sidebar.number_input('Preoperative Air Pure Tone Average', min_value=0, max_value=200, value=0, step=1)
-feature3 = st.sidebar.number_input('Preoperative Bone Pure Tone Average', min_value=0, max_value=200, value=0, step=1)
+feature1 = st.sidebar.number_input('Surgeon Experience (years)', min_value=0, max_value=50, value=10, step=1)
+feature2 = st.sidebar.number_input('Preoperative Air Pure Tone Average', min_value=0, max_value=200, value=50, step=1)
+feature3 = st.sidebar.number_input('Preoperative Bone Pure Tone Average', min_value=0, max_value=200, value=30, step=1)
 
 # Calculate ABG_pre
 abg_pre = feature2 - feature3
