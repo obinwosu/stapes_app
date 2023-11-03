@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load the trained model
-model = pickle.load(open('/Users/obinwosu/Downloads/best_rf_model1.pkl', 'rb'))
+model = pickle.load(open('best_rf_model1.pkl', 'rb'))
 
 # Define the Streamlit app
 st.title('Predictive Model for Stapes Surgery Outcome')
