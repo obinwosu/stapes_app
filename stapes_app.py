@@ -8,6 +8,9 @@ model = pickle.load(open('best_rf_model1.pkl', 'rb'))
 # Define the Streamlit app
 st.title('Predictive Model for Stapes Surgery Outcomes')
 st.write("a machine learning app for predicting postoperative airbone gap using only presurgical variables")
+st.write("This app is for research purposes only.")
+st.markdown("<p style='font-size: 16px;'>This app is for research purposes only.</p>", unsafe_allow_html=True)
+
 
 # Input features
 st.sidebar.header("Enter your features")
