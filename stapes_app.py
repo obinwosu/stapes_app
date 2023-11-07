@@ -28,7 +28,7 @@ feature5 = st.number_input('Age', min_value=18, max_value=100, value=18, step=1)
 
 # Check if feature4 matches the calculated ABG_pre
 if feature4 != abg_pre:
-    st.error("Error: The value of 'Preoperative Airbone Gap' does not match the calculated value. It should be {abg_pre}. Please correct it to continue.")
+    st.error(f"Error: The value of 'Preoperative Airbone Gap' does not match the calculated value. It should be {abg_pre}. Please correct it to continue.")
 
 # Select 'Left' or 'Right' for laterality
 selected_laterality = st.radio('Select Laterality', ['Left', 'Right'])
