@@ -11,7 +11,7 @@ st.write("a machine learning app for predicting postoperative airbone gap using 
 st.markdown("<p style='font-size: 12px;'>This app is currently for research purposes only.</p>", unsafe_allow_html=True)
 
 # Input features
-st.header("Enter your features")
+st.header("Enter Preoperative Features")
 
 feature1 = st.number_input('Surgeon Experience (years)', min_value=0, max_value=50, value=10, step=1)
 feature2 = st.number_input('Preoperative Air Pure Tone Average', min_value=0, max_value=200, value=50, step=1)
